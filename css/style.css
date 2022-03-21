@@ -1,0 +1,175 @@
+.header{
+    height:;
+    background:linear-gradient(to right, rgb(255, 255, 255, 0.9) , rgb(255, 255, 0, 0)), url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav .navbar-brand{
+    font-family:'Festive';
+    font-size:2.7rem;
+}
+
+nav .navbar-nav li a{
+    font-size: larger;
+}
+
+.relative{
+    color:rgb(41, 41, 136);
+    line-break: loose;
+    margin-top:11em;
+    margin-left:3em;
+}
+
+.relative h4{
+    font-size:2.5rem !important;
+}
+
+.relative p{
+    font-size:1.2rem !important;
+    font-weight:470;
+}
+
+.btn-orangered{
+    padding:1em 3em;
+    background-color: orangered;
+    font-size: 0.7;
+}
+
+.text-orangered{
+    color: orangered;
+}
+
+.bg-orangered{
+    background-color: orangered;;
+}
+
+.page2{
+
+}
+
+.col_1_image{
+    width:100%;
+    box-shadow: 5px 1px 20px rgb(187, 166, 166);
+}
+
+.spacing h4{
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    font-size: 1.9rem;
+}
+
+.spacing p{
+    line-height:3rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.image1{
+    
+    padding-left:3em;
+    padding-top:5em;
+}
+
+.image2{
+    padding-top: 0em;
+    padding-left: 0.5em;
+   
+}
+
+.image3{
+    padding-left: 0em;
+    padding-top: 0.5em;
+   
+}
+
+
+.image4{
+    padding-top:0.5em;
+    padding-left:0.5em;
+}
+
+.carousel-here{
+    display:none;
+}
+
+.back{
+    background:url(../images/pexels-julie-gábor-1414651.jpg);
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+    height: 400px;
+    background-size:cover;
+    color:white;
+}
+
+
+/* media queries starts here */
+
+/* for mobile */
+@media (min-width:320px) and (max-width:425px){
+    body{
+        font-size:0.5rem !important;
+    }
+
+    .relative{
+        color:rgb(41, 41, 136);
+        margin-top:2em !important;
+        margin-left:3em;
+    }
+
+    .four-images-inLaptops{
+        display:none !important;
+    }
+
+    .carousel-here{
+        display:block;
+    }
+}
+
+@media (min-width:425px) and (max-width:768px){
+    body{
+        font-size:0.7rem;
+    }
+
+    .relative{
+        color:rgb(41, 41, 136);
+        margin-top:7em;
+        margin-left:3em;
+    }
+    
+    .relative h4{
+        font-size:2rem !important;
+    }
+    
+    .relative p{
+        font-size:1rem !important;
+        font-weight:470;
+    }
+    
+    .spacing h4{
+        line-height: 1.4rem;
+        margin-bottom: 1.3rem;
+        margin-top:0.3rem !important;
+        font-size: 1.3rem;
+    }
+    
+    .spacing p{
+        line-height:1rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .four-images-inLaptops{
+        display:none !important;
+    }
+
+    .carousel-here{
+        display:block;
+    }
+
+    .container .showcase .container h2{
+        font-size:1rem !important;
+    }
+}
