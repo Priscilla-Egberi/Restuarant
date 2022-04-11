@@ -133,76 +133,25 @@
             </div>
 
             <!-- cards -->
-            <div class="container">
+            <section id="app" class="container">
                 <div class="row justify-content-md-around mb-3">
-                    
-                    <div class="col-md-4">
-                        <div class="card text-left shadow-lg rounded">
-                        <img class="card-img-top"  src="./images/card1.jpg" alt="">
-                        <div class="card-body">
-                            <div class="d-flex"><h4 class="card-title">Lorem, ipsum.</h4>
-                            <span class="text-orangered ml-5 "><strong>$899.99</strong></span></div>
-                            <p class="card-text">Body</p>
+                    <div v-for="(person, index) in persons" class="col-md-4">
+                        <div class=" card border text-left d-inline-block shadow rounded mt-5">
+                            <img v-bind:src='person.src' class="card-img-top" alt="image" >
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between"><h4 class="card-title">{{person.name}}</h4>
+                                    <span class="text-orangered ml-5 "><strong>{{person.amount}}</strong></span>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                            
                         </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-left shadow-lg rounded">
-                        <img class="card-img-top"  src="./images/card2.jpg" alt="">
-                        <div class="card-body">
-                            <div class="d-flex"><h4 class="card-title">Lorem, ipsum.</h4>
-                                <span class="text-orangered ml-5 "><strong>$899.99</strong></span></div>
-                                <p class="card-text">Body</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-left shadow-lg rounded">
-                        <img class="card-img-top"  src="./images/card3.jpg" alt="">
-                        <div class="card-body">
-                            <div class="d-flex"><h4 class="card-title">Lorem, ipsum.</h4>
-                                <span class="text-orangered ml-5 "><strong>$899.99</strong></span></div>
-                                <p class="card-text">Body</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
-
-                <div class="row justify-content-md-around mb-3">
-                    
-                    <div class="col-md-4">
-                        <div class="card text-left shadow-lg rounded">
-                        <img class="card-img-top"  src="./images/card4.jpg" alt="">
-                        <div class="card-body">
-                            <div class="d-flex"><h4 class="card-title">Lorem, ipsum.</h4>
-                                <span class="text-orangered ml-5 "><strong>$899.99</strong></span></div>
-                                <p class="card-text">Body</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-left shadow-lg rounded">
-                        <img class="card-img-top"  src="./images/card5.jpg" alt="">
-                        <div class="card-body">
-                            <div class="d-flex"><h4 class="card-title">Lorem, ipsum.</h4>
-                                <span class="text-orangered ml-5 "><strong>$899.99</strong></span></div>
-                                <p class="card-text">Body</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-left shadow-lg rounded">
-                        <img class="card-img-top"  src="./images/card6.jpg" alt="">
-                        <div class="card-body">
-                            <div class="d-flex"><h4 class="card-title">Lorem, ipsum.</h4>
-                                <span class="text-orangered ml-5 "><strong>$899.99</strong></span></div>
-                                <p class="card-text">Body</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-        </div>
-    </div>
+                
+            </section>
+            
+                
     
     <div class="container text-center mt-5 mb-3">    
     <div class="btn bg-orangered shad text-center mb-4">Buy something</div>
@@ -232,6 +181,8 @@
       
       
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/vue@3"></script> 
+    <script src="js/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
