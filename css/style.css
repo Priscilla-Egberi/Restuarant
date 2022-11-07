@@ -97,6 +97,9 @@ nav .navbar-nav li a{
 .navbar-nav{
     font-weight: 500 !important;
 }
+.sign-upbutton{
+    border-radius: 0px 0.25rem 0.25rem 0 !important;
+}
 /* media queries starts here */
 
 /* for mobile */
