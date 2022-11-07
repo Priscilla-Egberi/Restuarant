@@ -1,8 +1,10 @@
+
 .header{
-    height:;
+    height:100vh;
     background:linear-gradient(to right, rgb(255, 255, 255, 0.9) , rgb(255, 255, 0, 0)), url(../images/bg-1.jpg);
     background-size: cover;
     background-position: center;
+    
     
 }
 
@@ -18,23 +20,21 @@ nav .navbar-nav li a{
 .relative{
     color:rgb(41, 41, 136);
     line-break: loose;
-    margin-top:11em;
-    margin-left:3em;
+    margin-top:100px;
+    margin-left:.8rem;
 }
 
 .relative h4{
-    font-size:2.5rem !important;
+    font-size:1.55rem !important;
 }
 
 .relative p{
-    font-size:1.2rem !important;
+    font-size:1rem !important;
     font-weight:470;
 }
 
-.btn-orangered{
-    padding:1em 3em;
-    background-color: orangered;
-    font-size: 0.7;
+.btn-danger{
+    background-color: orangered !important
 }
 
 .text-orangered{
@@ -45,30 +45,20 @@ nav .navbar-nav li a{
     background-color: orangered;;
 }
 
-.page2{
-
-}
-
 .col_1_image{
     width:100%;
     box-shadow: 5px 1px 20px rgb(187, 166, 166);
 }
 
 .spacing h4{
-    line-height: 3rem;
-    margin-bottom: 1.5rem;
     margin-top: 3rem;
-    font-size: 1.9rem;
 }
 
 .spacing p{
-    line-height:3rem;
-    font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
 
 .image1{
-    
     padding-left:3em;
     padding-top:5em;
 }
@@ -104,19 +94,17 @@ nav .navbar-nav li a{
     color:white;
 }
 
-
+.navbar-nav{
+    font-weight: 500 !important;
+}
 /* media queries starts here */
 
 /* for mobile */
-@media (min-width:320px) and (max-width:425px){
-    body{
-        font-size:0.5rem !important;
-    }
+@media (min-width:320px) and (max-width:424px){
+    
 
     .relative{
         color:rgb(41, 41, 136);
-        margin-top:2em !important;
-        margin-left:3em;
     }
 
     .four-images-inLaptops{
@@ -128,28 +116,23 @@ nav .navbar-nav li a{
     }
 }
 
-@media (min-width:425px) and (max-width:768px){
-    body{
-        font-size:0.7rem;
-    }
+@media (min-width:425px) and (max-width:766px){
+
 
     .relative{
         color:rgb(41, 41, 136);
-        margin-top:7em;
-        margin-left:3em;
+        margin-top:100px;
     }
     
     .relative h4{
-        font-size:2rem !important;
+        font-size:4rem !important;
     }
     
     .relative p{
         font-size:1rem !important;
-        font-weight:470;
     }
     
     .spacing h4{
-        line-height: 1.4rem;
         margin-bottom: 1.3rem;
         margin-top:0.3rem !important;
         font-size: 1.3rem;
@@ -168,8 +151,23 @@ nav .navbar-nav li a{
     .carousel-here{
         display:block;
     }
+    .navbar-nav{
+        font-weight: 400 !important;
+    }
 
-    .container .showcase .container h2{
-        font-size:1rem !important;
+}
+
+@media (min-width:767px){
+    .relative{
+        margin-top:170px
+    }
+    .relative h4{
+        font-size:3.5rem !important;
+    }
+    .relative p{
+        font-size:1.5rem !important;
+    }
+    .navbar-nav{
+        font-weight: 400 !important;
     }
 }
